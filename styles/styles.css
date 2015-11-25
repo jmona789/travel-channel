@@ -1,0 +1,38 @@
+
+header {
+	height: 60px;
+	width: 100%;
+	background-color: #30211d;
+	color:#f6f1ed;
+	position: fixed;
+	top: 0px;
+	z-index: 1;
+}
+footer {
+	height: 60px;
+	width: 100%;
+	background-color: #6a5750;
+	color:#f6f1ed;
+	position: fixed;
+	bottom: 0px;
+	z-index: 1;
+}
+
+#sidebar {
+    position:absolute;
+    top:0px;
+    bottom:0px;
+    left:0;
+    width: 160px;
+    height:100%;
+    background: #b5a397;
+    color:#f6f1ed;
+   }
+
+body {
+	background-image: url(http://www.wpclipart.com/signs_symbol/roadside_symbols/bed.png);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+	background-colorOLD: #f6f1ed;
+}
