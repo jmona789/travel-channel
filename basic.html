@@ -6,9 +6,9 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="styles/styles.css">
-  <link rel="stylesheet" href="lib/themes/default.css" id="theme_base">
-  <link rel="stylesheet" href="lib/themes/default.date.css" id="theme_date">
-  <link rel="stylesheet" href="lib/themes/default.time.css" id="theme_time">
+ <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+<script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+<script src="jquery/jquery-ui.js"></script>
 
 </head>
 <body>
@@ -18,10 +18,22 @@
     </div>
   </div>
   <div class="row">
-    <div class="col-md-2">
-      <nav><button type="button" class="btn btn-primary" data-toggle="modal" data-target=".modal-lg">Search Hotels</button>
+    <div class="col-md-12">
+      <nav>
+      <!--navbar datepicker fields-->  
+        <div class="col-md-3">
+          Check in Date: <input type="text" id="dateIn">
+        </div>
+        <div class="col-md-3">
+          Check in Out: <input type="text" id="dateOut">
+        </div>
+        <div>
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".modal-lg">Search Hotels</button>
+        </div>
       </nav>
     </div>
+  </div> 
+
     
   <!--sidebar selectors-->  
   </div>
@@ -78,7 +90,13 @@
           </div>
           <div class="modal-body">
             <div class="row">
-              <div class="col-md-4">.col-md-4</div>
+    <!--trying to get the datepicker add in to work-->
+              <div class="col-md-4">
+                Check In Date: <input type="text" id="modalDateIn">
+              </div>
+              <div class="col-md-4">
+                Check Out Date: <input type="text" id="modalDateOut">
+              </div>
               <div class="col-md-4 col-md-offset-4">.col-md-4 .col-md-offset-4</div>
             </div>
             <div class="row">
@@ -114,11 +132,10 @@
     </div><!-- /.modal -->
   </div>
   <footer>Add awesome Footer information</footer>
-  <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
-  <script type="text/javascript" src="js/bootstrap.js"></script>
-  <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
-  <script src="lib/picker.js"></script>
-  <script src="lib/picker.date.js"></script>
-  <script src="lib/picker.time.js"></script>
+
+
+
+<script type="text/javascript" src="js/travel.js"></script>
+<script type="text/javascript" src="js/bootstrap.js"></script> 
 </body>
 </html>
