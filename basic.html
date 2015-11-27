@@ -3,9 +3,12 @@
 <head>
   <title>Travel the World!</title>
  <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="styles/styles.css">
+  <link rel="stylesheet" href="lib/themes/default.css" id="theme_base">
+  <link rel="stylesheet" href="lib/themes/default.date.css" id="theme_date">
+  <link rel="stylesheet" href="lib/themes/default.time.css" id="theme_time">
 
 </head>
 <body>
@@ -23,6 +26,7 @@
   <!--sidebar selectors-->  
   </div>
   <div class="col-md-3" id="sidebar">
+    <div class="sb-title">Cost</div>
     <form>
       <input type="radio" name="cost" value="500+">$500 and Up
       <br/>
@@ -37,31 +41,32 @@
       <input type="radio" name="cost" value="100">Under $100
     </form>
     <br />
-    <div>
+    <div class="sb-title">Stars</div>
+    <form>
       <input type="radio" name="stars" value="5">5 Stars<br />
       <input type="radio" name="stars" value="4">4 Stars<br />
       <input type="radio" name="stars" value="3">3 Stars<br />
       <input type="radio" name="stars" value="2">2 Stars<br />
       <input type="radio" name="stars" value="1">1 Star
-    </div>
+    </form>
     <br />
-    <div>
-      <div>Has WiFi</div>
+    <div class="sb-title">Has WiFi</div>
+    <form>
       <input type="radio" name="wifi" value="yes">Yes<br />
       <input type="radio" name="wifi" value="no">No
-    </div>
+    </form>
     <br />
-    <div>
-      <div>Has Restaurant</div>
+    <div class="sb-title">Has Restaurant</div>
+    <form>
       <input type="radio" name="restaurant" value="yes">Yes<br />
       <input type="radio" name="restaurant" value="no">No
-    </div>
+    </form>
     <br />
-    <div>
-      <div>Has a Pool</div>
+    <div class="sb-title">Has a Pool</div>
+    <form>
       <input type="radio" name="pool" value="yes">Yes<br />
       <input type="radio" name="pool" value="no">No
-    </div>
+    </form>
   </div>
   <div class="col-md-7" id="travelModal">
     <div class="modal fade modal-lg" tabindex="-1" role="dialog" aria-labelledby="gridSystemModalLabel">
@@ -80,8 +85,11 @@
               <div class="col-md-3 col-md-offset-3">.col-md-3 .col-md-offset-3</div>
               <div class="col-md-2 col-md-offset-4">.col-md-2 .col-md-offset-4</div>
             </div>
+            <!--trying to get the datepicker add in to work-->
             <div class="row">
-              <div class="col-md-6 col-md-offset-3">.col-md-6 .col-md-offset-3</div>
+              <div class="col-md-6 col-md-offset-3">
+              <input class="datepicker" type="text" placeholder="Try me">
+              </div>
             </div>
             <div class="row">
               <div class="col-sm-9">
@@ -108,5 +116,9 @@
   <footer>Add awesome Footer information</footer>
   <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
   <script type="text/javascript" src="js/bootstrap.js"></script>
+  <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+  <script src="lib/picker.js"></script>
+  <script src="lib/picker.date.js"></script>
+  <script src="lib/picker.time.js"></script>
 </body>
 </html>
