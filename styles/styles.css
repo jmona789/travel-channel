@@ -52,3 +52,9 @@ body {
 	background-attachment: fixed;
 	background-position: center;
 }
+
+.sb-title{
+  text-decoration: underline;
+  font-weight: bold;
+
+}
