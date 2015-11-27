@@ -20,85 +20,91 @@
       </nav>
     </div>
     
-    
+  <!--sidebar selectors-->  
   </div>
   <div class="col-md-3" id="sidebar">
-    <div>
-      <div>$500 and Up</div>
-      <div>$400-$500</div>
-      <div>$300-$400</div>
-      <div>$200-$300</div>
-      <div>$100-$200</div>
-      <div>Under $100</div>
-    </div>
+    <form>
+      <input type="radio" name="cost" value="500+">$500 and Up
+      <br/>
+      <input type="radio" name="cost" value="500">$400-$500
+      <br/>
+      <input type="radio" name="cost" value="400">$300-$400
+      <br/>
+      <input type="radio" name="cost" value="300">$200-$300
+      <br/>
+      <input type="radio" name="cost" value="200">$100-$200
+      <br/>
+      <input type="radio" name="cost" value="100">Under $100
+    </form>
     <br />
     <div>
-      <div>5 Stars </div>
-      <div>4 Stars </div>
-      <div>3 Stars </div>
-      <div>2 Stars</div>
-      <div>1 Star</div>
+      <input type="radio" name="stars" value="5">5 Stars<br />
+      <input type="radio" name="stars" value="4">4 Stars<br />
+      <input type="radio" name="stars" value="3">3 Stars<br />
+      <input type="radio" name="stars" value="2">2 Stars<br />
+      <input type="radio" name="stars" value="1">1 Star
     </div>
     <br />
     <div>
       <div>Has WiFi</div>
+      <input type="radio" name="wifi" value="yes">Yes<br />
+      <input type="radio" name="wifi" value="no">No
     </div>
     <br />
     <div>
       <div>Has Restaurant</div>
+      <input type="radio" name="restaurant" value="yes">Yes<br />
+      <input type="radio" name="restaurant" value="no">No
     </div>
     <br />
     <div>
       <div>Has a Pool</div>
+      <input type="radio" name="pool" value="yes">Yes<br />
+      <input type="radio" name="pool" value="no">No
     </div>
   </div>
   <div class="col-md-7" id="travelModal">
-   <div class="modal fade modal-lg" tabindex="-1" role="dialog" aria-labelledby="gridSystemModalLabel">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-          <h4 class="modal-title" id="gridSystemModalLabel">Modal title</h4>
-        </div>
-        <div class="modal-body">
-          <div class="row">
-            <div class="col-md-4">.col-md-4</div>
-            <div class="col-md-4 col-md-offset-4">.col-md-4 .col-md-offset-4</div>
+    <div class="modal fade modal-lg" tabindex="-1" role="dialog" aria-labelledby="gridSystemModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="gridSystemModalLabel">Select a Hotel</h4>
           </div>
-          <div class="row">
-            <div class="col-md-3 col-md-offset-3">.col-md-3 .col-md-offset-3</div>
-            <div class="col-md-2 col-md-offset-4">.col-md-2 .col-md-offset-4</div>
-          </div>
-          <div class="row">
-            <div class="col-md-6 col-md-offset-3">.col-md-6 .col-md-offset-3</div>
-          </div>
-          <div class="row">
-            <div class="col-sm-9">
-              Level 1: .col-sm-9
-              <div class="row">
-                <div class="col-xs-8 col-sm-6">
-                  Level 2: .col-xs-8 .col-sm-6
-                </div>
-                <div class="col-xs-4 col-sm-6">
-                  Level 2: .col-xs-4 .col-sm-6
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-md-4">.col-md-4</div>
+              <div class="col-md-4 col-md-offset-4">.col-md-4 .col-md-offset-4</div>
+            </div>
+            <div class="row">
+              <div class="col-md-3 col-md-offset-3">.col-md-3 .col-md-offset-3</div>
+              <div class="col-md-2 col-md-offset-4">.col-md-2 .col-md-offset-4</div>
+            </div>
+            <div class="row">
+              <div class="col-md-6 col-md-offset-3">.col-md-6 .col-md-offset-3</div>
+            </div>
+            <div class="row">
+              <div class="col-sm-9">
+                Level 1: .col-sm-9
+                <div class="row">
+                  <div class="col-xs-8 col-sm-6">
+                    Level 2: .col-xs-8 .col-sm-6
+                  </div>
+                  <div class="col-xs-4 col-sm-6">
+                    Level 2: .col-xs-4 .col-sm-6
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Save changes</button>
-        </div>
-      </div><!-- /.modal-content -->
-    </div><!-- /.modal-dialog -->
-</div><!-- /.modal -->
-      </div>
-    </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Find Hotel</button>
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
   </div>
-</div>
-
-
   <footer>Add awesome Footer information</footer>
   <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
   <script type="text/javascript" src="js/bootstrap.js"></script>
