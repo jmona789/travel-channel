@@ -16,7 +16,7 @@ nav {
     position: fixed;
     top:60px;
     width: 100%;
-    height: 30px;
+    height: 35px;
 }
 
 footer {
@@ -31,7 +31,7 @@ footer {
 
 #sidebar {
     position:fixed;
-    top:90px;
+    top:95px;
     bottom:0px;
     left:0;
     width: 160px;
@@ -57,4 +57,15 @@ body {
   text-decoration: underline;
   font-weight: bold;
 
+}
+
+.modalOLD{
+    width: 400px;
+    height: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: 0px;
+    margin-left: 0px;
+    
 }
