@@ -1,0 +1,37 @@
+cities = [New York, Las Vegas, Chicago, Miami, Los Angeles]
+
+New York = [New York 1, New York 2, New York 3, New York 4, New York 5]
+Las Vegas =[Las Vegas 1, Las Vegas 2, Las Vegas 3, Las Vegas 4, Las Vegas 5]
+Chicago =[Chicago 1, Chicago 2, Chicago 3, Chicago 4, Chicago 5]
+Miami =[Miami 1, Miami 2, Miami 3, Miami 4, Miami 5,]
+Los Angeles =[Los Angeles 1, Los Angeles 2, Los Angeles 3, Los Angeles 4, Los Angeles 5]
+
+New York 1 = ['Price' : x, 'Stars' : x, 'WiFi' : x, 'Pool' : x, 'Restaurant': x]
+New York 2 = ['Price' : x, 'Stars' : x, 'WiFi' : x, 'Pool' : x, 'Restaurant': x]
+New York 3 = ['Price' : x, 'Stars' : x, 'WiFi' : x, 'Pool' : x, 'Restaurant': x]
+New York 4 = ['Price' : x, 'Stars' : x, 'WiFi' : x, 'Pool' : x, 'Restaurant': x]
+New York 5 = ['Price' : x, 'Stars' : x, 'WiFi' : x, 'Pool' : x, 'Restaurant': x]
+
+Las Vegas 1 = ['Price' : x, 'Stars' : x, 'WiFi' : x, 'Pool' : x, 'Restaurant': x]
+Las Vegas 2 = ['Price' : x, 'Stars' : x, 'WiFi' : x, 'Pool' : x, 'Restaurant': x]
+Las Vegas 3 = ['Price' : x, 'Stars' : x, 'WiFi' : x, 'Pool' : x, 'Restaurant': x]
+Las Vegas 4 = ['Price' : x, 'Stars' : x, 'WiFi' : x, 'Pool' : x, 'Restaurant': x]
+Las Vegas 5 = ['Price' : x, 'Stars' : x, 'WiFi' : x, 'Pool' : x, 'Restaurant': x]
+
+Chicago 1 = ['Price' : x, 'Stars' : x, 'WiFi' : x, 'Pool' : x, 'Restaurant': x]
+Chicago 2 = ['Price' : x, 'Stars' : x, 'WiFi' : x, 'Pool' : x, 'Restaurant': x]
+Chicago 3 = ['Price' : x, 'Stars' : x, 'WiFi' : x, 'Pool' : x, 'Restaurant': x]
+Chicago 4 = ['Price' : x, 'Stars' : x, 'WiFi' : x, 'Pool' : x, 'Restaurant': x]
+Chicago 5 = ['Price' : x, 'Stars' : x, 'WiFi' : x, 'Pool' : x, 'Restaurant': x]
+
+Miami 1 = ['Price' : x, 'Stars' : x, 'WiFi' : x, 'Pool' : x, 'Restaurant': x]
+Miami 2 = ['Price' : x, 'Stars' : x, 'WiFi' : x, 'Pool' : x, 'Restaurant': x]
+Miami 3 = ['Price' : x, 'Stars' : x, 'WiFi' : x, 'Pool' : x, 'Restaurant': x]
+Miami 4 = ['Price' : x, 'Stars' : x, 'WiFi' : x, 'Pool' : x, 'Restaurant': x]
+Miami 5 = ['Price' : x, 'Stars' : x, 'WiFi' : x, 'Pool' : x, 'Restaurant': x]
+
+Los Angeles 1 = ['Price' : x, 'Stars' : x, 'WiFi' : x, 'Pool' : x, 'Restaurant': x ]
+Los Angeles 2 = ['Price' : x, 'Stars' : x, 'WiFi' : x, 'Pool' : x, 'Restaurant': x ]
+Los Angeles 3 = ['Price' : x, 'Stars' : x, 'WiFi' : x, 'Pool' : x, 'Restaurant': x ]
+Los Angeles 4 = ['Price' : x, 'Stars' : x, 'WiFi' : x, 'Pool' : x, 'Restaurant': x ]
+Los Angeles 5 = ['Price' : x, 'Stars' : x, 'WiFi' : x, 'Pool' : x, 'Restaurant': x ]
