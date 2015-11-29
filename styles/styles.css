@@ -102,3 +102,7 @@ body {
   margin-top: 80px;
   color: #1E90FF;
 }
+
+.dropdown {
+  padding-left: 20px;
+}
