@@ -13,7 +13,7 @@
 
 nav {
     background: #6a5750;
-  color: #1E90FF;
+    color: #1E90FF;
     position: fixed;
     top:60px;
     width: 100%;
@@ -22,13 +22,14 @@ nav {
 }
 
 footer {
-	height: 60px;
-	width: 100%;
-	background-color: #6a5750;
-	color:#f6f1ed;
-	position: fixed;
-	bottom: 0px;
-	z-index: 1;
+  height: 60px;
+  width: 100%;
+  background-color: #6a5750;
+  color:#f6f1ed;
+  position: fixed;
+  bottom: 0px;
+  z-index: 1;
+  margin-left: -15px;
 }
 
 #sidebar {
@@ -44,11 +45,9 @@ footer {
 
 #nyResults {
   color: #f6f1ed;
-  border-style: solid;
-  border-color: black;
   margin-top: 110px;
   margin-left: 180px;
-  display: none;
+  display: block;
 }
 
 #nyHotels {
@@ -58,8 +57,6 @@ footer {
 
 #miamiResults {
   color: #f6f1ed;
-  border-style: solid;
-  border-color: black;
   margin-top: 110px;
   margin-left: 180px;
   display: none;
@@ -72,8 +69,6 @@ footer {
 
 #dcResults {
   color: #f6f1ed;
-  border-style: solid;
-  border-color: black;
   margin-top: 110px;
   margin-left: 180px;
   display: none;
@@ -86,8 +81,6 @@ footer {
 
 #chicagoResults {
   color: #f6f1ed;
-  border-style: solid;
-  border-color: black;
   margin-top: 110px;
   margin-left: 180px;
   display: none;
@@ -100,8 +93,6 @@ footer {
 
 #losAngelesResults {
   color: #f6f1ed;
-  border-style: solid;
-  border-color: black;
   margin-top: 110px;
   margin-left: 180px;
   display: none;
