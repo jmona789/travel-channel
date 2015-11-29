@@ -84,6 +84,35 @@ footer {
   height: auto;
 }
 
+#chicagoResults {
+  color: #f6f1ed;
+  border-style: solid;
+  border-color: black;
+  margin-top: 110px;
+  margin-left: 180px;
+  display: none;
+}
+
+#chicagoHotels {
+  width: 100%;
+  height: auto;
+}
+
+#losAngelesResults {
+  color: #f6f1ed;
+  border-style: solid;
+  border-color: black;
+  margin-top: 110px;
+  margin-left: 180px;
+  display: none;
+}
+
+#losAngelesHotels {
+  width: 100%;
+  height: auto;
+}
+
+
 body {
 	background-image: url(http://www.wpclipart.com/signs_symbol/roadside_symbols/bed.png);
 	background-repeat: no-repeat;
