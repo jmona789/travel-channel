@@ -6,36 +6,37 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="styles/styles.css">
- <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+  <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
 <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
 <script src="jquery/jquery-ui.js"></script>
 </head>
 
 <body>
-  <header><h2>Travel Site</h2></header>
-  <div class="row">
-    <div class="col-md-3"><i class="fa fa-bed fa-4x"></i>
+  <div class="container-fluid">
+    <div class="row col-md-12" id="headerRow">
+      <div class="col-md-1"><i class="fa fa-bed fa-4x"></i>
+      </div>
+      <div class="col-md-3 col-md-offset-3">
+      <h2>Travel Site</h2>
+      </div>
     </div>
   </div>
-  <div class="row">
-    <div class="col-md-12">
-      <nav>
-      <!--navbar datepicker fields-->  
-        <div class="col-md-3">
-          Check in Date: <input type="text" id="dateIn">
-        </div>
-        <div class="col-md-3">
-          Check in Out: <input type="text" id="dateOut">
-        </div>
-        <div>
-        <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".modal-lg">Search Hotels</button>
-        </div>
-      </nav>
-    </div>
-  </div> 
+  <div class="row container-fluid col-md-12">
+    <nav>
+      <div class="col-md-3">
+        Check in Date: <input type="text" id="dateIn">
+      </div>
+      <div class="col-md-3">
+        Check in Out: <input type="text" id="dateOut">
+      </div>
+      <div class="col-md-2 col-md-offset-4">
+      <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".modal-lg">Search Hotels</button>
+      </div>
+    </nav>
+  </div>
+
 
   <!--sidebar selectors-->  
-  </div>
   <div class="col-md-3" id="sidebar">
     <div class="sb-title">Cost</div>
     <form>
@@ -79,6 +80,92 @@
       <input type="radio" name="pool" value="no">No
     </form>
   </div>
+  <!--Results Area for all cities-->
+  <div class="container-fluid col-md-8 col-md-offset-3" id="nyResults">
+    <table>
+      <tr>
+        <td><img src="images/hotels/ny/ny1.png" id="nyHotels"></td>
+      </tr>
+      <tr>
+        <td><img src="images/hotels/ny/ny2.png" id="nyHotels"></td>
+      </tr>
+      <tr>
+        <td><img src="images/hotels/ny/ny3.png" id="nyHotels"></td>
+      </tr>
+      <tr>
+        <td><img src="images/hotels/ny/ny4.png" id="nyHotels"></td>
+      </tr>
+      <tr>
+        <td><img src="images/hotels/ny/ny5.png" id="nyHotels"></td>
+      </tr> 
+      <tr>
+        <td>No</td>
+      </tr>
+      <tr>
+        <td>More</td>
+      </tr>
+      <tr>
+        <td>Results</td>
+      </tr>       
+    </table>
+  </div>
+  <div class="container-fluid col-md-8 col-md-offset-3" id="dcResults">
+  <table>
+    <tr>
+      <td><img src="images/hotels/dc/dc1.png" id="dcHotels"></td>
+    </tr>
+    <tr>
+      <td><img src="images/hotels/dc/dc2.png" id="dcHotels"></td>
+    </tr>
+    <tr>
+      <td><img src="images/hotels/dc/dc3.png" id="dcHotels"></td>
+    </tr>
+    <tr>
+      <td><img src="images/hotels/dc/dc4.png" id="dcHotels"></td>
+    </tr>
+    <tr>
+      <td><img src="images/hotels/dc/dc5.png" id="dcHotels"></td>
+    </tr> 
+    <tr>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>More</td>
+    </tr>
+    <tr>
+      <td>Results</td>
+    </tr>       
+  </table>
+  </div>
+  <div class="container-fluid col-md-8 col-md-offset-3" id="miamiResults">
+    <table>
+      <tr>
+        <td><img src="images/hotels/miami/miami1.png" id="miamiHotels"></td>
+      </tr>
+      <tr>
+        <td><img src="images/hotels/miami/miami2.png" id="miamiHotels"></td>
+      </tr>
+      <tr>
+        <td><img src="images/hotels/miami/miami3.png" id="miamiHotels"></td>
+      </tr>
+      <tr>
+        <td><img src="images/hotels/miami/miami4.png" id="miamiHotels"></td>
+      </tr>
+      <tr>
+        <td><img src="images/hotels/miami/miami5.png" id="miamiHotels"></td>
+      </tr> 
+      <tr>
+        <td>No</td>
+      </tr>
+      <tr>
+        <td>More</td>
+      </tr>
+      <tr>
+        <td>Results</td>
+      </tr>       
+    </table>
+  </div>
+  <!--MODAL STARTS-->
   <div class="col-md-7" id="travelModal">
     <div class="modal fade modal-lg" tabindex="-1" role="dialog" aria-labelledby="gridSystemModalLabel">
       <div class="modal-dialog" role="document">
@@ -89,25 +176,28 @@
           </div>
           <div class="modal-body">
             <div class="row">
-    <!--trying to get the datepicker add in to work-->
-              <div class="col-md-4">
+              <div class="dropdown col-md-3">
+                <button id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Select City
+                  <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dLabel">
+                  <li>New York</li>
+                  <li>Miami</li>
+                  <li>Washington DC</li>
+                </ul>
+              </div>
+              <div class="col-md-3 col-md-offset-2">
                 Check In Date: <input type="text" id="modalDateIn">
               </div>
-              <div class="col-md-4">
+              <div class="col-md-3 col-md-offset-5">
                 Check Out Date: <input type="text" id="modalDateOut">
               </div>
-              <div class="col-md-4 col-md-offset-4">.col-md-4 .col-md-offset-4</div>
             </div>
             <div class="row">
               <div class="col-md-3 col-md-offset-3">.col-md-3 .col-md-offset-3</div>
               <div class="col-md-2 col-md-offset-4">.col-md-2 .col-md-offset-4</div>
             </div>
-            <!--trying to get the datepicker add in to work-->
-            <div class="row">
-              <div class="col-md-6 col-md-offset-3">
-              <input class="datepicker" type="text" placeholder="Try me">
-              </div>
-            </div>
+
             <div class="row">
               <div class="col-sm-9">
                 Level 1: .col-sm-9
@@ -131,7 +221,11 @@
     </div><!-- /.modal -->
   </div>
   <footer>Add awesome Footer information</footer>
+<<<<<<< HEAD
   
+=======
+
+>>>>>>> 658a7f6cf2addedca9724295fec49dcdd2d002f2
 <script type="text/javascript" src="js/travel.js"></script>
 <script type="text/javascript" src="js/bootstrap.js"></script> 
 </body>
