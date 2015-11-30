@@ -16,7 +16,7 @@ $(document).ready(function() {
     else if (citySelector === "Washington DC")
       $('#dcResults').show();
     else if (citySelector === "Los Angeles")
-      $('#laResults').show();
+      $('#losAngelesResults').show();
   }
 
   function wifi ()
