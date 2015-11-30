@@ -232,9 +232,57 @@
           </div>
           <div class="modal-body">
             <div class="row">
-              <div class="col-md-2">City<input type="text" name="city" id="citySearch">
+              <div class="col-md-3"> 
+                <button id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Select City<span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dLabel">
+                  <li>
+                    <div class="checkbox"><label><input type="checkbox" value="" id="chicagoBox">Chicago</label>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="checkbox"><label><input type="checkbox" value="" id="dcBox">DC</label>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="checkbox"><label><input type="checkbox" value="" id="losAngelesBox">Los Angeles</label>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="checkbox"><label><input type="checkbox" value="" id="miamiBox">Miami</label>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="checkbox"><label><input type="checkbox" value="" id="nyBox">New York</label>
+                    </div>
+                  </li>                                                      
+                </ul>
               </div>
-              <div class="col-md-2 col-md-offset-3">Stars<input type="text" name="stars" id="starSearch">
+              <div class="col-md-3 col-md-offset-3"> 
+                <button id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Stars<span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dLabel">
+                  <li>
+                    <div class="checkbox"><label><input type="checkbox" value="">1</label>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="checkbox"><label><input type="checkbox" value="">2</label>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="checkbox"><label><input type="checkbox" value="">3</label>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="checkbox"><label><input type="checkbox" value="">4</label>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="checkbox"><label><input type="checkbox" value="">5</label>
+                    </div>
+                  </li>                                                      
+                </ul>
               </div>
             </div>
             <div class="row">
@@ -244,8 +292,7 @@
               <div class="col-md-3 col-md-offset-2">
                 Check Out Date: <input type="text" id="modalDateOut">
               </div>
-            </div>
-            
+            </div> 
           <div class="modal-footer">
             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
             <button type="button" class="btn btn-primary" id="findHotel">Find Hotel</button>

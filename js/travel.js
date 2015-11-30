@@ -1,5 +1,9 @@
 $(document).ready(function() {
 
+var cities = [ "chicago", "washington dc", "los angeles", "miami", "new york" ]
+var hotelStars = [ "1", "2", "3", "4", "5" ]
+
+
 $(function() {
   $( "#dateIn" ).datepicker();
 });
@@ -19,25 +23,8 @@ $(function() {
 
 $("#findHotel").click(nySearch);
 function nySearch () {
-  document.getElementById("nyResults").style.display = "none";
+  if (true) {};
+  document.getElementById("nyResults").style.display = "block";
 }
-
-
-
-// if the html matches any city then change css display to block
-
-    // $("findHotel").click(function() {
-    //     $(".chicagoHotels").h();
-    //     $(".dcHotels").hide();
-    //     $(".losAngelesHotels").hide();
-    //     $(".miamiHotels").hide();
-    //     $(".nyHotels").hide();
-    //     if ($(".chicagoHotels").css("display") === "none") {
-    //         $("").css({
-    //             'background-image' : 'url("public/images/expand-lg.png")'
-    //         });
-    //     }
-    //     else {} 
-    // });
 
 });
