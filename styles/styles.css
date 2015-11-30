@@ -11,6 +11,12 @@
 
 }
 
+.modal-header {
+  color:#f6f1ed;
+  background-color: #30211d;
+}
+
+
 nav {
     background: #6a5750;
     color: #1E90FF;
