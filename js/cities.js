@@ -5,6 +5,8 @@ Washington D.C. =[Washington D.C. 1, Washington D.C. 2, Washington D.C. 3, Washi
 Chicago =[Chicago 1, Chicago 2, Chicago 3, Chicago 4, Chicago 5]
 Miami =[Miami 1, Miami 2, Miami 3, Miami 4, Miami 5,]
 Los Angeles =[Los Angeles 1, Los Angeles 2, Los Angeles 3, Los Angeles 4, Los Angeles 5]
+New York = [New York 1, New York 2, New York 3, New York 4, New York 5]
+Washington D.C. = [Washington D.C. 1, Washington D.C. 2, Washington D.C. 3, Washington D.C. 4, Washington D.C. 5]
 
 "New York 1" = ['Price' : x, 'Stars' : x, 'WiFi' : x, 'Pool' : x, 'Restaurant': x]
 "New York 2" = ['Price' : x, 'Stars' : x, 'WiFi' : x, 'Pool' : x, 'Restaurant': x]
