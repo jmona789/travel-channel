@@ -43,66 +43,17 @@ footer {
     color:#f6f1ed;
    }
 
-#nyResults {
+#dcHotels, #nyHotels, #miamiHotels, #chicagoHotels, #losAngelesHotels {
+  width: 100%;
+  height: auto;
+}
+
+#miamiResults, #nyResults, #chicagoResults, #dcResults, #losAngelesResults {
   color: #f6f1ed;
   margin-top: 110px;
   margin-left: 180px;
   display: none;
 }
-
-#nyHotels {
-  width: 100%;
-  height: auto;
-}
-
-#miamiResults {
-  color: #f6f1ed;
-  margin-top: 110px;
-  margin-left: 180px;
-  display: none;
-}
-
-#miamiHotels {
-  width: 100%;
-  height: auto;
-}
-
-#dcResults {
-  color: #f6f1ed;
-  margin-top: 110px;
-  margin-left: 180px;
-  display: none;
-}
-
-#dcHotels {
-  width: 100%;
-  height: auto;
-}
-
-#chicagoResults {
-  color: #f6f1ed;
-  margin-top: 110px;
-  margin-left: 180px;
-  display: none;
-}
-
-#chicagoHotels {
-  width: 100%;
-  height: auto;
-}
-
-#losAngelesResults {
-  color: #f6f1ed;
-  margin-top: 110px;
-  margin-left: 180px;
-  display: none;
-}
-
-#losAngelesHotels {
-  width: 100%;
-  height: auto;
-}
-
 
 body {
 	background-image: url(http://www.wpclipart.com/signs_symbol/roadside_symbols/bed.png);

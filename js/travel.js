@@ -1,28 +1,32 @@
 $(document).ready(function() {
 
-var cities = [ "chicago", "washington dc", "los angeles", "miami", "new york" ]
-var hotelStars = [ "1", "2", "3", "4", "5" ]
-
-$(function() {
-  $("#dateIn").datepicker();
+$("body").on('click', "#findHotel", function()
+{
+  citySearch($("#citySelector").val().trim());
 });
 
-$(function() {
-  $("#dateOut").datepicker();
-});
+function citySearch (citySelector) 
+{
+  if (citySelector === "New York")
+      $('#nyResults').show();
+  else if (citySelector === "Chicago")
+      $('#chicagoResults').show();
+}
 
-$(function() {
-  $("#modalDateIn").datepicker();
-});
+  $(function() {
+    $("#dateIn").datepicker();
+  });
 
-$(function() {
-  $("#modalDateOut").datepicker();
-});
+  $(function() {
+    $("#dateOut").datepicker();
+  });
 
+  $(function() {
+    $("#modalDateIn").datepicker();
+  });
 
-$("#findHotel").click(nySearch);
-function nySearch () {
-  document.getElementById("nyResults").style.display = "block";
-   $ ("#travelModal").modal("hide");
-  }
+  $(function() {
+    $("#modalDateOut").datepicker();
+  });
+
  });
