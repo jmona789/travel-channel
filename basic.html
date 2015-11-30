@@ -23,14 +23,8 @@
   </div>
   <div class="row container-fluid col-md-12">
     <nav>
-      <div class="col-md-3">
-        Check in Date: <input type="text" id="dateIn">
-      </div>
-      <div class="col-md-3">
-        Check in Out: <input type="text" id="dateOut">
-      </div>
       <div class="col-md-2 col-md-offset-4">
-      <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".modal-lg">Search Hotels</button>
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".modal-lg">Search Hotels</button>
       </div>
     </nav>
   </div>
@@ -233,30 +227,8 @@
           <div class="modal-body">
             <div class="row">
               <div class="col-md-3"> 
-                <button id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Select City<span class="caret"></span>
-                </button>
-                <ul class="dropdown-menu" aria-labelledby="dLabel">
-                  <li>
-                    <div class="checkbox"><label><input type="checkbox" value="" id="chicagoBox">Chicago</label>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="checkbox"><label><input type="checkbox" value="" id="dcBox">DC</label>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="checkbox"><label><input type="checkbox" value="" id="losAngelesBox">Los Angeles</label>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="checkbox"><label><input type="checkbox" value="" id="miamiBox">Miami</label>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="checkbox"><label><input type="checkbox" value="" id="nyBox">New York</label>
-                    </div>
-                  </li>                                                      
-                </ul>
+                <div>Select City</div>
+                <input type="text" id="citySelector">
               </div>
               <div class="col-md-3 col-md-offset-3"> 
                 <button id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Stars<span class="caret"></span>
@@ -281,7 +253,7 @@
                   <li>
                     <div class="checkbox"><label><input type="checkbox" value="">5</label>
                     </div>
-                  </li>                                                      
+                  </li>      
                 </ul>
               </div>
             </div>
@@ -295,14 +267,14 @@
             </div> 
           <div class="modal-footer">
             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary" id="findHotel">Find Hotel</button>
+            <button type="button" class="btn btn-primary" id="findHotel" data-dismiss="modal">Find Hotel</button>
           </div>
         </div><!-- /.modal-content -->
       </div><!-- /.modal-dialog -->
     </div><!-- /.modal -->
   </div>
   
-  <footer>Add awesome Footer information</footer>
+  <footer>An RCCB production</footer>
 
   
 <script type="text/javascript" src="js/travel.js"></script>
