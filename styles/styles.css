@@ -6,8 +6,8 @@
 	color:#f6f1ed;
 	position: fixed;
 	top: 0px;
-      text-align: center;
-      z-index: 1;
+  text-align: center;
+  z-index: 1;
 
 }
 
@@ -18,13 +18,13 @@
 
 
 nav {
-    background: #6a5750;
-    color: #1E90FF;
-    position: fixed;
-    top:60px;
-    width: 100%;
-    height: 35px;
-    z-index: 1;
+  background: #6a5750;
+  color: #1E90FF;
+  position: fixed;
+  top:60px;
+  width: 100%;
+  height: 35px;
+  z-index: 1;
 }
 
 footer {
@@ -39,15 +39,15 @@ footer {
 }
 
 #sidebar {
-    position:fixed;
-    top:95px;
-    bottom:0px;
-    left:0;
-    width: 160px;
-    height:100%;
-    background: #b5a397;
-    color:#f6f1ed;
-   }
+  position:fixed;
+  top:95px;
+  bottom:0px;
+  left:0;
+  width: 160px;
+  height:100%;
+  background: #b5a397;
+  color:#f6f1ed;
+}
 
 .dcHotels, .nyHotels, .miamiHotels, .chicagoHotels, .losAngelesHotels {
   width: 100%;

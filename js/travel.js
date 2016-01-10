@@ -2,17 +2,17 @@
 /*global $, jQuery, alert*/
 $(document).ready(function () {
 
-  "use strict";
   function citySearch(citySelector) {
-    if (citySelector === "New York" || "NYC" || "New York City" || "New York, NY" || "New York City, NY") {
+    $('#nyResults, #chicagoResults, #miamiResults, #dcResults, #losAngelesResults').hide();
+    if (citySelector === "new york" || citySelector === "nyc" || citySelector === "new york city" || citySelector === "new york, ny" || citySelector === "new york city, ny") {
       $('#nyResults').show();
-    } else if (citySelector === "Chicago" || "Chicago, IL") {
+    } else if (citySelector === "chicago" || citySelector === "chicago, il") {
       $('#chicagoResults').show();
-    } else if (citySelector === "Miami" || "Miami, FL") {
+    } else if (citySelector === "miami" || citySelector === "miami, fl") {
       $('#miamiResults').show();
-    } else if (citySelector === "Washington DC") {
+    } else if (citySelector === "washington dc") {
       $('#dcResults').show();
-    } else if (citySelector === "Los Angeles" || "Los Angeles, CA" ||"LA, CA" || "LA") {
+    } else if (citySelector === "los angeles" || citySelector === "los angeles, ca" || citySelector === "la, ca" || citySelector === "la") {
       $('#losAngelesResults').show();
     }
   }
