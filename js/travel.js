@@ -22,19 +22,34 @@ $(document).ready(function () {
   });
 
   $('#wifiYes').on('click', function(){
-    $('#nyResult1, #chicagoResult1, #miamiResult1, #dcResult1, #losAngelesResult1').fadeIn('slow');
-    $('#nyResult2, #chicagoResult2, #miamiResult2, #dcResult2, #losAngelesResult2').fadeOut('slow');
-    $('#nyResult3, #chicagoResult3, #miamiResult3, #dcResult3, #losAngelesResult3').fadeIn('slow');
-    $('#nyResult4, #chicagoResult4, #miamiResult4, #dcResult4, #losAngelesResult4').fadeIn('slow');
-    $('#nyResult5, #chicagoResult5, #miamiResult5, #dcResult5, #losAngelesResult5').fadeOut('slow');
+    $('#nyResult1, #chicagoResult1, #miamiResult1, #dcResult1, #losAngelesResult1').show();
+    $('#nyResult2, #chicagoResult2, #miamiResult2, #dcResult2, #losAngelesResult2').hide();
+    $('#nyResult3, #chicagoResult3, #miamiResult3, #dcResult3, #losAngelesResult3').show();
+    $('#nyResult4, #chicagoResult4, #miamiResult4, #dcResult4, #losAngelesResult4').show();
+    $('#nyResult5, #chicagoResult5, #miamiResult5, #dcResult5, #losAngelesResult5').hide();
   })
 
   $('#wifiNo').on('click', function(){
-    $('#nyResult1, #chicagoResult1, #miamiResult1, #dcResult1, #losAngelesResult1').fadeOut('slow');
-    $('#nyResult2, #chicagoResult2, #miamiResult2, #dcResult2, #losAngelesResult2').fadeIn('slow');
-    $('#nyResult3, #chicagoResult3, #miamiResult3, #dcResult3, #losAngelesResult3').fadeOut('slow');
-    $('#nyResult4, #chicagoResult4, #miamiResult4, #dcResult4, #losAngelesResult4').fadeOut('slow');
-    $('#nyResult5, #chicagoResult5, #miamiResult5, #dcResult5, #losAngelesResult5').fadeIn('slow');
+    $('#nyResult1, #chicagoResult1, #miamiResult1, #dcResult1, #losAngelesResult1').hide();
+    $('#nyResult2, #chicagoResult2, #miamiResult2, #dcResult2, #losAngelesResult2').show();
+    $('#nyResult3, #chicagoResult3, #miamiResult3, #dcResult3, #losAngelesResult3').hide();
+    $('#nyResult4, #chicagoResult4, #miamiResult4, #dcResult4, #losAngelesResult4').hide();
+    $('#nyResult5, #chicagoResult5, #miamiResult5, #dcResult5, #losAngelesResult5').show();
+  })
+
+  $('#restaurantYes').on('click', function(){
+    $('#nyResult1, #chicagoResult1, #miamiResult1, #dcResult1, #losAngelesResult1').hide();
+    $('#nyResult2, #chicagoResult2, #miamiResult2, #dcResult2, #losAngelesResult2').show();
+    $('#nyResult3, #chicagoResult3, #miamiResult3, #dcResult3, #losAngelesResult3').show();
+    $('#nyResult4, #chicagoResult4, #miamiResult4, #dcResult4, #losAngelesResult4').hide();
+    $('#nyResult5, #chicagoResult5, #miamiResult5, #dcResult5, #losAngelesResult5').show();
+  })
+  $('#restaurantNo').on('click', function(){
+    $('#nyResult1, #chicagoResult1, #miamiResult1, #dcResult1, #losAngelesResult1').show();
+    $('#nyResult2, #chicagoResult2, #miamiResult2, #dcResult2, #losAngelesResult2').hide();
+    $('#nyResult3, #chicagoResult3, #miamiResult3, #dcResult3, #losAngelesResult3').hide();
+    $('#nyResult4, #chicagoResult4, #miamiResult4, #dcResult4, #losAngelesResult4').show();
+    $('#nyResult5, #chicagoResult5, #miamiResult5, #dcResult5, #losAngelesResult5').hide();
   })
 
   function cost() {
@@ -42,10 +57,6 @@ $(document).ready(function () {
   }
 
   function pool() {
-
-  }
-
-  function restaurant() {
 
   }
 
