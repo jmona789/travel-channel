@@ -217,8 +217,8 @@
     </table>
   </div>
   <!--MODAL STARTS-->
-  <div class="col-md-7" id="travelModal">
-    <div class="modal fade modal-lg" tabindex="-1" role="dialog" aria-labelledby="gridSystemModalLabel">
+  <div class="col-md-7">
+    <div id="travelModal" class="modal fade modal-lg" tabindex="-1" role="dialog" aria-labelledby="gridSystemModalLabel">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header">
@@ -230,6 +230,9 @@
               <div class="col-md-3"> 
                 <div>Select City</div>
                 <input type="text" id="citySelector">
+                <div class="alert alert-danger" id="noCityAlert" role="alert">
+                  <p>Please enter a valid City (New York, Chicago, Miami, Washington DC, or Los Angeles).</p>
+                </div>
               </div>
               <div class="col-md-3 col-md-offset-3"> 
                 <button id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Stars<span class="caret"></span>
@@ -261,15 +264,21 @@
             <div class="row">
               <div class="col-md-3">
                 Check In Date: <input type="text" id="modalDateIn">
+                <div class="alert alert-danger" id="noDateInAlert" role="alert">
+                  <p>Please enter a check in date.</p>
+                </div>
               </div>
               <div class="col-md-3 col-md-offset-2">
                 Check Out Date: <input type="text" id="modalDateOut">
+                <div class="alert alert-danger" id="noDateOutAlert" role="alert">
+                  <p>Please enter a check out date.</p>
+                </div>
               </div>
             </div>
           </div> 
           <div class="modal-footer">
             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary" id="findHotel" data-dismiss="modal">Find Hotel</button>
+            <button type="button" class="btn btn-primary" id="findHotel">Find Hotel</button>
           </div>
         </div><!-- /.modal-content -->
       </div><!-- /.modal-dialog -->

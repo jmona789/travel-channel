@@ -1,6 +1,8 @@
 /*jslint browser: true*/
 /*global $, jQuery, alert*/
 $(document).ready(function () {
+  //hide Alerts
+  $('#noCityAlert, #noDateInAlert, #noDateOutAlert').hide();
 
   function citySearch(citySelector) {
     $('#nyResults, #chicagoResults, #miamiResults, #dcResults, #losAngelesResults').hide();
@@ -18,7 +20,34 @@ $(document).ready(function () {
   }
 
   $('body').on('click', "#findHotel", function () {
-    citySearch($('#citySelector').val().trim().toLowerCase());
+    var city = $('#citySelector').val().trim().toLowerCase();
+    var dateIn = $("#modalDateIn").val();
+    var dateOut = $("#modalDateOut").val();
+    if(city === '' && dateIn === '' && dateOut === ''){
+      $('.alert').slideDown();
+    }else if(city === '' && dateIn === ''){
+      $('#noDateOutAlert').hide();
+      $('#noCityAlert, #noDateInAlert').slideDown();
+    }else if(city === '' && dateOut ===''){
+      $('#noDateOutAlert').hide();
+      $('#noCityAlert, #noDateOutAlert').slideDown();
+    }else if(dateIn === '' && dateOut ===''){
+      $('#noCityAlert').hide();
+      $('#noDateInAlert, #noDateOutAlert').slideDown();
+    }else if (city === '') {
+      $('#noDateInAlert, #noDateOutAlert').hide();
+      $('#noCityAlert').slideDown();
+    }else if(dateIn === '') {
+      $('#noCityAlert, #noDateOutAlert').hide();
+      $('#noDateInAlert').slideDown();
+    }else if (dateOut === ''){
+      $('#noCityAlert, #noDateInAlert').hide();
+      $('#noDateOutAlert').slideDown();
+    }else{
+      $('.alert').hide();
+      $('#travelModal').modal('hide');
+      citySearch(city);
+    }
   });
 
   $('#wifiYes').on('click', function(){
