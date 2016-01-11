@@ -10,7 +10,7 @@ $(document).ready(function () {
       $('#chicagoResults').show();
     } else if (citySelector === "miami" || citySelector === "miami, fl") {
       $('#miamiResults').show();
-    } else if (citySelector === "washington dc") {
+    } else if (citySelector === "washington dc" || citySelector === "washington dc") {
       $('#dcResults').show();
     } else if (citySelector === "los angeles" || citySelector === "los angeles, ca" || citySelector === "la, ca" || citySelector === "la") {
       $('#losAngelesResults').show();
@@ -26,15 +26,15 @@ $(document).ready(function () {
   }
 
   function cost() {
-
+    
   }
 
   function pool() {
-
+    
   }
 
   function restaurant() {
-
+    
   }
 
   $(function () {

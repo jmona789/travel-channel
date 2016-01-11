@@ -275,7 +275,20 @@
       </div><!-- /.modal-dialog -->
     </div><!-- /.modal -->
   </div>
-  <footer>An RCCB production</footer>
+  <!-- Small modal -->
+
+  <div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <img id="verifiedPic" src="images/verified.png"> 
+        <p>Verified as Error Free by Jimmy Mona</p>
+      </div>
+    </div>
+  </div>
+  <footer>
+    An RCCB production
+    <button type="button" class="btn btn-primary verifiedBtn" data-toggle="modal" data-target=".bs-example-modal-sm">Verified By</button>
+  </footer>
 
   
 <script type="text/javascript" src="js/travel.js"></script>
