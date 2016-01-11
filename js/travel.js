@@ -12,7 +12,7 @@ $(document).ready(function () {
       $('#chicagoResults').show();
     } else if (citySelector === "miami" || citySelector === "miami, fl") {
       $('#miamiResults').show();
-    } else if (citySelector === "washington dc" || citySelector === "washington dc") {
+    } else if (citySelector === "washington dc" || citySelector === "washington, dc") {
       $('#dcResults').show();
     } else if (citySelector === "los angeles" || citySelector === "los angeles, ca" || citySelector === "la, ca" || citySelector === "la") {
       $('#losAngelesResults').show();
@@ -56,7 +56,7 @@ $(document).ready(function () {
     $('#nyResult3, #chicagoResult3, #miamiResult3, #dcResult3, #losAngelesResult3').show();
     $('#nyResult4, #chicagoResult4, #miamiResult4, #dcResult4, #losAngelesResult4').show();
     $('#nyResult5, #chicagoResult5, #miamiResult5, #dcResult5, #losAngelesResult5').hide();
-  })
+  });
 
   $('#wifiNo').on('click', function(){
     $('#nyResult1, #chicagoResult1, #miamiResult1, #dcResult1, #losAngelesResult1').hide();
@@ -64,7 +64,7 @@ $(document).ready(function () {
     $('#nyResult3, #chicagoResult3, #miamiResult3, #dcResult3, #losAngelesResult3').hide();
     $('#nyResult4, #chicagoResult4, #miamiResult4, #dcResult4, #losAngelesResult4').hide();
     $('#nyResult5, #chicagoResult5, #miamiResult5, #dcResult5, #losAngelesResult5').show();
-  })
+  });
 
   $('#restaurantYes').on('click', function(){
     $('#nyResult1, #chicagoResult1, #miamiResult1, #dcResult1, #losAngelesResult1').hide();
@@ -72,14 +72,15 @@ $(document).ready(function () {
     $('#nyResult3, #chicagoResult3, #miamiResult3, #dcResult3, #losAngelesResult3').show();
     $('#nyResult4, #chicagoResult4, #miamiResult4, #dcResult4, #losAngelesResult4').hide();
     $('#nyResult5, #chicagoResult5, #miamiResult5, #dcResult5, #losAngelesResult5').show();
-  })
+  });
+
   $('#restaurantNo').on('click', function(){
     $('#nyResult1, #chicagoResult1, #miamiResult1, #dcResult1, #losAngelesResult1').show();
     $('#nyResult2, #chicagoResult2, #miamiResult2, #dcResult2, #losAngelesResult2').hide();
     $('#nyResult3, #chicagoResult3, #miamiResult3, #dcResult3, #losAngelesResult3').hide();
     $('#nyResult4, #chicagoResult4, #miamiResult4, #dcResult4, #losAngelesResult4').show();
     $('#nyResult5, #chicagoResult5, #miamiResult5, #dcResult5, #losAngelesResult5').hide();
-  })
+  });
 
   $('#poolYes').on('click', function(){
     $('#nyResult1, #chicagoResult1, #miamiResult1, #dcResult1, #losAngelesResult1').hide();
@@ -87,14 +88,15 @@ $(document).ready(function () {
     $('#nyResult3, #chicagoResult3, #miamiResult3, #dcResult3, #losAngelesResult3').show();
     $('#nyResult4, #chicagoResult4, #miamiResult4, #dcResult4, #losAngelesResult4').hide();
     $('#nyResult5, #chicagoResult5, #miamiResult5, #dcResult5, #losAngelesResult5').show();
-  })
+  });
+
   $('#poolNo').on('click', function(){
     $('#nyResult1, #chicagoResult1, #miamiResult1, #dcResult1, #losAngelesResult1').show();
     $('#nyResult2, #chicagoResult2, #miamiResult2, #dcResult2, #losAngelesResult2').hide();
     $('#nyResult3, #chicagoResult3, #miamiResult3, #dcResult3, #losAngelesResult3').hide();
     $('#nyResult4, #chicagoResult4, #miamiResult4, #dcResult4, #losAngelesResult4').show();
     $('#nyResult5, #chicagoResult5, #miamiResult5, #dcResult5, #losAngelesResult5').hide();
-  })
+  });
 
   $(function () {
     $("#dateIn").datepicker();
