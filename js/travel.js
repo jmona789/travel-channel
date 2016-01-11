@@ -67,14 +67,6 @@ $(document).ready(function () {
     $('#nyResult5, #chicagoResult5, #miamiResult5, #dcResult5, #losAngelesResult5').hide();
   })
 
-  function cost() {
-
-  }
-
-  function pool() {
-
-  }
-
   $(function () {
     $("#dateIn").datepicker();
   });
