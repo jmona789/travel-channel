@@ -17,24 +17,36 @@ $(document).ready(function () {
     }
   }
 
-  $("body").on('click', "#findHotel", function () {
-    citySearch($("#citySelector").val().trim().toLowerCase());
+  $('body').on('click', "#findHotel", function () {
+    citySearch($('#citySelector').val().trim().toLowerCase());
   });
 
-  function wifi() {
-    
-  }
+  $('#wifiYes').on('click', function(){
+    $('#nyResult1, #chicagoResult1, #miamiResult1, #dcResult1, #losAngelesResult1').fadeIn('slow');
+    $('#nyResult2, #chicagoResult2, #miamiResult2, #dcResult2, #losAngelesResult2').fadeOut('slow');
+    $('#nyResult3, #chicagoResult3, #miamiResult3, #dcResult3, #losAngelesResult3').fadeIn('slow');
+    $('#nyResult4, #chicagoResult4, #miamiResult4, #dcResult4, #losAngelesResult4').fadeIn('slow');
+    $('#nyResult5, #chicagoResult5, #miamiResult5, #dcResult5, #losAngelesResult5').fadeOut('slow');
+  })
+
+  $('#wifiNo').on('click', function(){
+    $('#nyResult1, #chicagoResult1, #miamiResult1, #dcResult1, #losAngelesResult1').fadeOut('slow');
+    $('#nyResult2, #chicagoResult2, #miamiResult2, #dcResult2, #losAngelesResult2').fadeIn('slow');
+    $('#nyResult3, #chicagoResult3, #miamiResult3, #dcResult3, #losAngelesResult3').fadeOut('slow');
+    $('#nyResult4, #chicagoResult4, #miamiResult4, #dcResult4, #losAngelesResult4').fadeOut('slow');
+    $('#nyResult5, #chicagoResult5, #miamiResult5, #dcResult5, #losAngelesResult5').fadeIn('slow');
+  })
 
   function cost() {
-    
+
   }
 
   function pool() {
-    
+
   }
 
   function restaurant() {
-    
+
   }
 
   $(function () {
